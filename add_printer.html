@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Журнал заправки принтерів</title>
+    <link href="css/zapravka.css" type="text/css" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <form action="../html.loc/php/add_printer.php" method="POST" name="form1">
+            <table border="2" width=1050px>
+                <tr>
+                    <td>Модель принтера</td>
+                    <td>Розташування принетра</td>
+                    <td>Відповідальний</td>
+                    <td>IP adresa</td>
+                    <td>Катридж</td>
+                    <td>Тонер</td>
+                    <td>Додатковий катридж</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="model_printer" tabindex="1">
+                    </td>
+                    <td>
+                        <select name="kabinet" id="kabinet" tabindex="2">
+                            <option></option>
+                            <option>Реєстратура №1</option>
+                            <option>Реєстратура №2</option>
+                            <option>100 кабінет</option>
+                            <option>101 кабінет</option>
+                            <option>120 кабінет</option>
+                            <option>122 кабінет</option>
+                            <option>224 кабінет</option>
+                            <option>325 кабінет</option>
+                            <option>414 кабінет</option>
+                            <option>514 кабінет</option>
+                            <option>614 кабінет</option>
+                            <option>Склад</option>
+                            <option>8 поверх</option>
+                    </td>
+                    <td>
+                        <input type="text" id="vidpovidalnuy" name="vidpovidalnuy" tabindex="3">
+                    </td>
+                    <td>
+                        <input type="text" name="ip_adress" tabindex="4">
+                    </td>
+                    <td>
+                        <input type="text" name="katridg" tabindex="5">
+                    </td>
+                    <td>
+                        <input type="text" name="toner" tabindex="6">
+                    </td>
+                    <td>
+                        <label>Так
+                            <input type="radio" name="dod_katridg" value="ТАК" checked>
+                        </label>
+                        <label>НІ
+                            <input type="radio" name="dod_katridg" value="НІ">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <input type="reset" value="Оновити">
+                <input type="submit" value="Внести дані в базу">
+            </p>
+            <!--<p><input type="image" src="images/ibutton.png"></p>-->
+        </form>
+    </body>
+
+</html>

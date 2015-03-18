@@ -1,0 +1,31 @@
+/************** Main Menu ***************/
+ul{
+    
+    font-size: 16px;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+li {
+    width: 230;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    margin: 0px 0px 0px -4px;
+    display:inline-block;
+    background: #bbb;
+    color: white;
+    cursor: pointer;
+}
+
+ul li:hover {
+background: #2fc5ff;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
